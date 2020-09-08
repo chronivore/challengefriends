@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from 'react';
+import App  from '../App';
 
 
-const Location = () => {
+const Weather = (props) => {
+    
+
     return (
         <div>
             
@@ -9,4 +12,4 @@ const Location = () => {
     )
 }
 
-export default Location;
+export default Weather;
