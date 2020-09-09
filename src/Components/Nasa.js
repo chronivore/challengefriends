@@ -39,8 +39,8 @@ const Nasa = (props) => {
 
     return (
         <div>
-            <h1>NASA</h1>
-            {!isLoaded ? "" : <img src={image} />}
+            <h1 className="nasa">NASA LOCATION</h1>
+            {!isLoaded ? "" : <img src={image} className="nasaImage" />}
         </div>
     )
 }

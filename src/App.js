@@ -5,17 +5,13 @@ import Temperature from "./Components/Temperature";
 import Restaurant from "./Components/Restaurant";
 import Navbar from './Components/Navbar';
 import {BrowserRouter as Router} from 'react-router-dom';
-
 function App() {
   const [latitude, setLatitude] = useState('');
   const [longitude, setLongitude] = useState('');
   const [isLocationLoaded, setIsLocationLoaded] = useState(false);
-
   let lat = "";
   let lon = "";
-
   useEffect(() => {
-
     const success = (pos) => {
       const crd = pos.coords;
       setLatitude( crd.latitude);
@@ -29,9 +25,7 @@ function App() {
     
     navigator.geolocation.getCurrentPosition(success, error);
   }, []);
-
   
-
   return (
     <div>
       <Router>
@@ -40,5 +34,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

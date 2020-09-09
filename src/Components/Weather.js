@@ -26,6 +26,7 @@ const fetchWeather =() => {
       .catch(err => console.log(err));
 }
 
+
 const mapper = () => {
 
     for (const each of weatherData) {
@@ -45,5 +46,4 @@ const mapper = () => {
         </div>
     )
 }
-
 export default Weather;

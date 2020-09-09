@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import Location from "./Location";
 import { Container, Row, Col, Card, CardTitle, Table } from "reactstrap";
@@ -71,9 +72,9 @@ const Restaurant = (props) => {
 
   return (
     <>
-           <h3>Best Restaurants near You!</h3> 
+           <h3 className="restaurant">Best Restaurants near You!</h3> 
            <hr/>
-           <Table striped>
+           <Table striped className="table">
                <thead>
                    <tr>
                        <th>#</th>
@@ -89,5 +90,6 @@ const Restaurant = (props) => {
         </>
   );
 };
+
 
 export default Restaurant;
