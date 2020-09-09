@@ -3,8 +3,6 @@ import './App.css';
 import Location from "./Components/Location";
 import Temperature from "./Components/Temperature";
 import Restaurant from "./Components/Restaurant";
-import Nasa from "./Components/Nasa";
-import Weather from "./Components/Weather";
 import Navbar from './Components/Navbar';
 import {BrowserRouter as Router} from 'react-router-dom';
 

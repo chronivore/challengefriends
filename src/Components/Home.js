@@ -1,9 +1,11 @@
 import React from 'react';
-import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { Card, Button, CardTitle, CardText, Row, Col, Jumbotron } from 'reactstrap';
 import {  Link } from "react-router-dom";
 
 const Home = (props) => {
   return (
+    <Jumbotron>
+      <h1 className="display-3">Hello, peeps!</h1>
     <Row>
       <Col sm="4">
         <Card body>
@@ -27,6 +29,7 @@ const Home = (props) => {
         </Card>
       </Col>
     </Row>
+    </Jumbotron>
   );
 };
 
