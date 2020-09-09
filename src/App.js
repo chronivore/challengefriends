@@ -12,6 +12,7 @@ import Home from './Components/Home';
 function App() {
   const [latitude, setLatitude] = useState('');
   const [longitude, setLongitude] = useState('');
+
   const [isLocationLoaded, setIsLocationLoaded] = useState(false);
 
   let lat = "";
@@ -41,8 +42,21 @@ function App() {
       <Router>
       <Navbar latitude={latitude} longitude={longitude} isLocationLoaded={isLocationLoaded}/>
       </Router>
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      setLatitude(position.coords.latitude);
+      setLongitude(position.coords.longitude);
+      console.log(latitude, longitude);
+    });
+  }, []);
+  
+  return (
+    <div>
+        <Restaurant latitude={latitude} longitude={longitude}/>
+        <Weather latitude={latitude} longitude={longitude}/>
+
     </div>
   );
 }
-
 export default App;
