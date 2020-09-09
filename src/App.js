@@ -5,24 +5,40 @@ import Temperature from "./Components/Temperature";
 import Restaurant from "./Components/Restaurant";
 import Nasa from "./Components/Nasa";
 import Weather from "./Components/Weather";
+import Navbar from './Components/Navbar';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 function App() {
   const [latitude, setLatitude] = useState('');
   const [longitude, setLongitude] = useState('');
+  const [isLocationLoaded, setIsLocationLoaded] = useState(false);
+
+  let lat = "";
+  let lon = "";
 
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      setLatitude(position.coords.latitude);
-      setLongitude(position.coords.longitude);
-      console.log(latitude, longitude);
-    });
+
+    const success = (pos) => {
+      const crd = pos.coords;
+      setLatitude( crd.latitude);
+      setLongitude(crd.longitude);
+      setIsLocationLoaded(true);
+    }
+    
+    function error(err) {
+      console.warn(`ERROR(${err.code}): ${err.message}`);
+    }
+    
+    navigator.geolocation.getCurrentPosition(success, error);
   }, []);
 
   
 
   return (
     <div>
-        <Restaurant latitude={latitude} longitude={longitude}/>
+      <Router>
+      <Navbar latitude={latitude} longitude={longitude} isLocationLoaded={isLocationLoaded}/>
+      </Router>
     </div>
   );
 }

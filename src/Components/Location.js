@@ -13,7 +13,8 @@ const Location = () => {
       });
 
     return (
-        <div>
+        <div style={{'text-align': 'center'}}>
+            <h2 >Your location co-ordinates are:</h2>
             <h2>{latitude}</h2>
             <h2>{longitude}</h2>
         </div>
