@@ -10,6 +10,46 @@
 
 .jumbotron {
     background: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80");
-   
+   height: 1000px;
 }
 
+.cardTitle {
+    font-size: 48px;
+    color: black;
+    text-shadow: 4px 4px lightskyblue;
+    font-weight: bold;
+}
+
+.cardText {
+    font-size: 24px;
+    color: black;
+}
+
+.restaurant {
+    font-family: 'Neucha', cursive;
+    background: url("https://previews.123rf.com/images/pcanzo/pcanzo1308/pcanzo130800164/21959585-fast-food-banner.jpg");
+    height: 200px;
+    font-size: 80px;
+    font-weight: bold;
+    color:black;
+    text-shadow: 6px 6px lightskyblue;
+    
+    
+}
+
+.table {
+    font-family: 'Neucha', cursive;
+    background-color: lightblue;
+}
+
+.nasa {
+    background: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80");
+    height: 300px;
+    font-size: 180px;
+    text-shadow: 6px 6px lightblue;
+}
+
+.nasaImage {
+    height: 500px;
+    width: 75%;
+}

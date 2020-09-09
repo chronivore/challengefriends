@@ -72,9 +72,9 @@ const Restaurant = (props) => {
 
   return (
     <>
-           <h3>Best Restaurants near You!</h3> 
+           <h3 className="restaurant">Best Restaurants near You!</h3> 
            <hr/>
-           <Table striped>
+           <Table striped className="table">
                <thead>
                    <tr>
                        <th>#</th>
