@@ -9,6 +9,7 @@ import Home from "./Home";
 const Navbar = (props) => {
   return (
     <div>
+      Hello
       <div>
         <Navbar color="light" light expand="md">
           <NavLink href="/">Home</NavLink>
@@ -20,14 +21,14 @@ const Navbar = (props) => {
       <div>
         <Switch>
           <Route exact path="/"><Home /></Route>
-          <Route exact path="/restaurant">
+          {/* <Route exact path="/restaurant">
             {!props.isLocationLoaded ? ("") : (
               <Restaurant
                 latitude={props.latitude}
                 longitude={props.longitude}
               />
             )}
-          </Route>
+          </Route> */}
         </Switch>
       </div>
     </div>

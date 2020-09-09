@@ -37,7 +37,6 @@ function App() {
 
   return (
     <div className="mainDiv">
-      
       <Router>
       <Navbar latitude={latitude} longitude={longitude} isLocationLoaded={isLocationLoaded}/>
       </Router>
