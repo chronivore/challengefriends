@@ -24,11 +24,11 @@ const fetchWeather =() => {
 
 }
 
+
     return (
         <div>
            { fetchWeather() }
         </div>
     )
 }
-
 export default Weather;

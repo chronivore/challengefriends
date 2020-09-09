@@ -1,8 +1,10 @@
 import React from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";
 import { Route, Link, Switch } from "react-router-dom";
+
 import Nasa from "./Nasa";
 import Weather from "./Weather";
+
 import Restaurant from "./Restaurant";
 import Location from "./Location";
 import Home from "./Home";
@@ -14,6 +16,7 @@ const Navbar = (props) => {
 
         <Nav>
           <NavLink href="/">Home</NavLink>
+
           <NavLink href="/nasa">NASA</NavLink>
           <NavLink href="/weather">Weather</NavLink>
           <NavLink href="/restaurant">Restaurant</NavLink>
@@ -23,12 +26,14 @@ const Navbar = (props) => {
         <Switch>
           <Route exact path="/"><Home /></Route>
           <Route exact path="/weather"><Weather /></Route>
+
           <Route exact path="/nasa">
           {!props.isLocationLoaded ? ("") : (
             <Nasa latitude={props.latitude}
                 longitude={props.longitude}/>
             )}
           </Route>
+
           <Route exact path="/restaurant">
             {!props.isLocationLoaded ? ("") : (
               <Restaurant
@@ -43,3 +48,8 @@ const Navbar = (props) => {
   );
 };
 export default Navbar;
+
+
+
+
+

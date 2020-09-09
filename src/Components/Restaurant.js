@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import Location from "./Location";
 import { Container, Row, Col, Card, CardTitle, Table } from "reactstrap";
@@ -89,5 +90,6 @@ const Restaurant = (props) => {
         </>
   );
 };
+
 
 export default Restaurant;
