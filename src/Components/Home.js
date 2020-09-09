@@ -5,7 +5,10 @@ import {  Link } from "react-router-dom";
 const Home = (props) => {
   return (
     <Jumbotron>
-    <h1 className="display-3">Hello, class!</h1>
+
+
+      <h1 className="display-3">Hello, peeps!</h1>
+
     <Row>
       <Col sm="4">
         <Card body>
