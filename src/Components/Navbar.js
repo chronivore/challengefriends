@@ -22,7 +22,12 @@ const Navbar = (props) => {
       <div>
         <Switch>
           <Route exact path="/"><Home /></Route>
-          <Route exact path="/weather"><Weather /></Route>
+          <Route exact path="/weather">
+          {!props.isLocationLoaded ? ("") : (
+            <Weather latitude={props.latitude}
+                longitude={props.longitude} />
+          )}
+          </Route>
           <Route exact path="/nasa">
           {!props.isLocationLoaded ? ("") : (
             <Nasa latitude={props.latitude}
