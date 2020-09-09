@@ -10,12 +10,12 @@ const Navbar = (props) => {
   return (
     <div>
       <div>
-        <Nav>
+        <Navbar color="light" light expand="md">
           <NavLink href="/">Home</NavLink>
           <NavLink href="#">NASA</NavLink>
           <NavLink href="#">Weather</NavLink>
           <NavLink href="/restaurant">Restaurant</NavLink>
-        </Nav>
+        </Navbar>
       </div>
       <div>
         <Switch>

@@ -7,6 +7,7 @@ import Nasa from "./Components/Nasa";
 import Weather from "./Components/Weather";
 import Navbar from './Components/Navbar';
 import {BrowserRouter as Router} from 'react-router-dom';
+import Home from './Components/Home';
 
 function App() {
   const [latitude, setLatitude] = useState('');
@@ -35,7 +36,8 @@ function App() {
   
 
   return (
-    <div>
+    <div className="mainDiv">
+      
       <Router>
       <Navbar latitude={latitude} longitude={longitude} isLocationLoaded={isLocationLoaded}/>
       </Router>
