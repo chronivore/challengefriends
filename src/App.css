@@ -1,7 +1,11 @@
 
 .display-3 {
-    color: blue;
+    color: lightblue;
     font-family: 'Neucha', cursive;
+}
+
+#hello {
+    font-size: 100px;
 }
 
 .row {
@@ -16,15 +20,25 @@
 .cardTitle {
     font-size: 48px;
     color: black;
-    text-shadow: 4px 4px lightskyblue;
+    text-shadow: 4px 4px lightblue;
     font-weight: bold;
 }
 
 .cardText {
-    font-size: 24px;
+    font-size: 20px;
     color: black;
 }
 
+#button {
+    background-color: black;
+    font-size: 44px;
+    border-style: none;
+    color: lightblue;
+}
+
+#xbutton {
+    background-color: black;
+}
 .restaurant {
     font-family: 'Neucha', cursive;
     background: url("https://previews.123rf.com/images/pcanzo/pcanzo1308/pcanzo130800164/21959585-fast-food-banner.jpg");
